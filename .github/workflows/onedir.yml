@@ -22,7 +22,7 @@ jobs:
       - name: Generate executable
         run: python -m PyInstaller weasyprint/__main__.py -n weasyprint -D
       - name: Test executable
-        run: dist/weasyprint --info
+        run: dist/weasyprint/weasyprint --info
       - name: Store executable
         uses: actions/upload-artifact@v4
         with:
